@@ -1,0 +1,173 @@
+body {
+    background-color: darkgray;
+    box-sizing: border-box;
+    background-color:  hsl(216, 12%, 8%);
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.child {
+    display: grid;
+    grid-template-rows:auto 0.7fr 0.7fr 0.7fr;
+    margin: auto; 
+    width:calc(100%/4);
+    height:fit-content;
+   background-color:  hsl(213, 19%, 18%);
+   border-radius: 20px;
+}
+.one img
+{
+   padding: 30px;
+}
+.two{
+    padding: 0px;
+    margin: 0px;
+}
+.First-p
+{
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    margin-left: 30px;
+}
+.second-p
+{
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:  hsl(216, 12%, 54%);
+    margin: 5px 15px;
+    line-height: 20px;
+}
+.four
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.eval
+{
+    border-radius: 75%;
+    font-size: 15px;
+    padding: 18px 20px;
+    background-color:hsl(216, 13%, 23%);
+    color: white;
+    transition: 0.4s ease ;
+    border: none;
+}
+.five
+{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Submit
+{
+    background-color:  hsl(25, 97%, 53%);
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 85%;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    border: 20px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.btnbackgund
+{
+    background-color: hsl(25, 97%, 53%);
+}
+.Submit:hover
+{
+    background-color: white;
+    color: orange;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .child {
+        width: calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .child {
+        width: calc(100% / 1);
+    }
+}
+
+
+.Result{
+    display: none;
+}
+
+/*Secound part Result shown*/
+
+
+.r-one
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r-three
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r-three>p
+{
+    color: white;
+    font-size: 25px;
+    font-family: "Overpass", sans-serif;
+}
+.r-four
+{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.r-four>p
+{
+   color:hsl(216, 12%, 54%);
+   line-height: 22px;
+   font-size: 15px;
+}
+.rating
+{
+    color: orange;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .child {
+        width: calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .child {
+        width: calc(100% / 1);
+    }
+    .r-four>p
+{
+margin-left: 20px;
+}
+}
